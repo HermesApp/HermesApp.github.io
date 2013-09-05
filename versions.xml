@@ -7,9 +7,10 @@
 <title>Version 1.1.18</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
-<pubDate>Tue, 03 Sep 2013 21:32:26 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.18.zip" sparkle:version="1954" sparkle:shortVersionString="1.1.18" type="application/octet-stream" length="1160983" sparkle:dsaSignature="MC0CFDNIyOhK0uDn4GTdt5zW+bfWU8fyAhUAp+QDWg0V16In6uFVESB5mkdQ6J4="></enclosure>
+<pubDate>Wed, 04 Sep 2013 23:00:23 -0700</pubDate>
+<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.18.zip" sparkle:version="1954" sparkle:shortVersionString="1.1.18" type="application/octet-stream" length="1160984" sparkle:dsaSignature="MCwCFCYpmxMiZ4hPyvdpp7mBOdR/MKW0AhRbVfz2/oWJEqEBvupdIWbtAiTbHg=="></enclosure>
 </item>
+
 <item>
 <title>Version 1.1.17</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
