@@ -6,7 +6,7 @@ end
 
 pids = []
 
-pids << run("jekyll #{root} #{root}/_site --auto")
+pids << run("jekyll build #{root} #{root}/_site --watch")
 pids << run("compass watch #{root} -c #{root}/_config/compass.rb")
 
 system "open #{root}/_site/index.html"
