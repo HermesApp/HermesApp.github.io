@@ -1,1 +1,89 @@
-Hello, world!
+---
+layout: default
+---
+
+<div class='head'>
+  <div class='desc'>
+    <div class='icon'>
+      <img src='./images/shot-radio-big.png' class='drawer'/>
+    </div>
+
+    <div class='title'>
+      <h1>Hermes</h1>
+      <h2>Pandora Client for OS X</h2>
+
+      <a class='download' href='https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.20.zip'>
+        Download
+        <div class='sub'>For OS X 10.6+</div>
+      </a>
+
+      <a class='develop' href='https://github.com/alexcrichton/hermes'>
+        Develop
+        <div class='sub'>It's open source.</div>
+      </a>
+
+      <a class='info' href='https://github.com/alexcrichton/hermes/issues'>
+        Issues
+        <div class='sub'>Report a bug.</div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class='main'>
+  <div class='feature fast'>
+    <span class='name'>Fast</span>
+    <div class='pusher'></div>
+    <img src='./images/comparison.png'/>
+
+    <div class='text'>Hermes beats flash hands down.</div>
+  </div>
+
+  <div class='feature free'>
+    <span class='name'>Free</span>
+
+    <div class='text'>
+      Even for users who don't have Pandora One, Hermes is and always will be a
+      free application for everyone. If you'd like to donate, however, you are
+      <a class='donate'
+         onclick='document.forms["donateForm"].submit(); return false;'
+         href='#'>also welcome to</a>.
+    </div>
+
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
+          style='display:none' id='donateForm'>
+      <input type="hidden" name="cmd" value="_s-xclick"/>
+      <input type="hidden" name="hosted_button_id" value="58H9GQKN28GNL"/>
+      <input type="image"
+             src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif"
+             border="0"
+             name="submit"
+             alt="PayPal - The safer, easier way to pay online!"/>
+      <img alt=""
+           border="0"
+           src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+           width="1"
+           height="1"/>
+    </form>
+  </div>
+
+  <div class='feature usable'>
+    <span class='name'>Usable</span>
+
+    <div class='text'>
+      Hermes pauses music when your computer sleeps, and it doesn't resume on
+      wake. It fixes errors and picks up the song right where you left off.
+    </div>
+  </div>
+
+  <div class='feature features'>
+    <span class='name'>Features</span>
+
+    <div class='text'>
+      You can like/dislike songs and create/edit/delete stations, just as on
+      Pandora. Also, things like last.fm integration, and Growl notifications
+      just aren't possible with Pandora.
+    </div>
+  </div>
+
+</div>

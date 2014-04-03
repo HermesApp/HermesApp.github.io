@@ -1,0 +1,204 @@
+@import url(http://fonts.googleapis.com/css?family=Molengo);
+
+@import "blueprint/typography";
+@import "compass";
+
+$quiet_color: darken(white, 40%);
+
+body {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  @include blueprint-typography-body(12px);
+}
+
+@mixin fonts {
+  font-family: 'Molengo', arial, serif;
+}
+
+@mixin icon($image) {
+  @include unstyled-link;
+  display: block;
+  float: left;
+
+  padding-left: 55px;
+  background: image-url($image);
+  background-repeat: no-repeat;
+
+  font-size: 25px;
+  clear: both;
+  margin: 10px 0;
+  color: white;
+
+  .sub {
+    @include quiet;
+    font-size: 10px;
+  }
+
+  &:visited {
+    color: white;
+  }
+}
+
+.head {
+  @include background-image(
+    linear-gradient(top, lighten(black, 20%) 98%, white));
+  height: 225px;
+
+  .desc {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin: 10px 0 0 0;
+  }
+
+  .title {
+    float: left;
+  }
+
+  h1 {
+    @include fonts;
+    color: white;
+    font-weight: 900;
+    font-size: 95px;
+    margin: 0;
+    padding: 0;
+    line-height: 100%;
+  }
+
+  h2 {
+    @include fonts;
+    color: #c1c271;
+    margin: 0;
+    font-size: 20px;
+    font-weight: normal;
+    width: 150px;
+    float: left;
+  }
+
+  a {
+    @include fonts;
+    @include unstyled-link;
+    @include transition-property('border, shadow');
+    @include transition-duration(0.5s);
+    @include transition-duration(ease-in);
+    @include border-radius(10px);
+
+    display: block;
+
+    padding-left: 55px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+    border: 1px solid lighten(black, 20%);
+    float: left;
+
+    box-shadow: none;
+
+    .sub {
+      @include quiet;
+      font-size: 10px;
+    }
+
+    &:visited {
+      color: white;
+    }
+
+    &:hover {
+      @include box-shadow(#888 3px 3px 3px);
+      border: 1px solid gray;
+    }
+
+    &:nth-of-type(odd) {
+      margin-left: 10px;
+    }
+
+    &:nth-of-type(even) {
+      clear: both;
+    }
+  }
+
+  .download {
+    background: image-url('download.png') no-repeat;
+    width: 125px;
+  }
+
+  .develop {
+    background: image-url('xcode.png') no-repeat;
+    width: 100px;
+  }
+
+  .info {
+    background: image-url('information.png') no-repeat;
+    width: 100px;
+  }
+}
+
+.main {
+  overflow: auto;
+}
+
+.feature {
+  clear: both;
+  overflow: auto;
+
+  width: 400px;
+  height: 102px;
+  margin: 10px 0;
+  border: 1px solid #aaa;
+  @include box-shadow(#aaa 2px 2px 2px);
+
+  .text {
+    padding: 6px 10px;
+    font-size: 15px;
+  }
+
+  .name {
+    @include fonts;
+    float: left;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 20px 5px 10px;
+
+    @include background-image(
+        linear-gradient(top left, lighten(black, 90%), white));
+  }
+
+  &.fast {
+
+    img {
+      overflow: auto;
+      display: block;
+      float: right;
+      clear: both;
+    }
+
+    .pusher {
+      float: right;
+      width: 1px;
+      height: 48px;
+    }
+  }
+
+  &.features {
+    img { margin-left: 30px; }
+  }
+}
+
+.thanks {
+  width: 500px;
+  margin: 20px;
+  font-size: 140%;
+}
+
+footer {
+  clear: both;
+  margin: 20px auto;
+  text-align: center;
+  width: 900px;
+}
