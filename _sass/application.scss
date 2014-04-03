@@ -13,7 +13,7 @@ body {
 }
 
 @mixin fonts {
-  font-family: 'Molengo', arial, serif;
+  font-family: 'Molengo', arial, sans-serif;
 }
 
 @mixin icon($image) {
@@ -148,7 +148,6 @@ body {
   overflow: auto;
 
   width: 400px;
-  height: 102px;
   margin: 10px 0;
   border: 1px solid #aaa;
   @include box-shadow(#aaa 2px 2px 2px);
