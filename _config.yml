@@ -2,4 +2,4 @@ pygments: true
 markdown: kramdown
 
 # Dynamically set from _config/release.rb
-hermes_download_url: https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.20.zip
+hermes_download_url: https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.0.zip
