@@ -1,5 +1,1 @@
-before_install: sudo apt-get update -qq
-install:
- - sudo apt-get install -qq libxslt1-dev libxml2-dev python-dev
- - sudo pip install requests beautifulsoup4 lxml
 script: python _test.py

@@ -1,28 +1,33 @@
 #!/usr/bin/env python
 import os
 import sys
-import requests
-from bs4 import BeautifulSoup
+import xml.etree.ElementTree as ET
 import subprocess
+# Python 2 vs 3
+try:
+    import urllib2
+except ImportError:
+    import urllib.request as urllib2
 
 
 VERSIONS_XML = 'versions.xml'
 DSA_PUBKEY = '_dsa_pub.pem'
+# Crutch for ElementTree's shortcomings.
+SPARKLE_NS = '{http://www.andymatuschak.org/xml-namespaces/sparkle}'
 
 
 def find_last_release(appcast):
-    with open(appcast, 'rb') as f:
-        soup = BeautifulSoup(f.read(), 'xml')
-    first = soup.find('item').enclosure
+    tree = ET.parse(appcast)
+    first = tree.find('./channel/item/enclosure')
     return {
-        'url': first['url'],
-        'signature': first['sparkle:dsaSignature'],
+        'url': first.attrib['url'],
+        'signature': first.attrib[SPARKLE_NS+'dsaSignature'],
     }
 
 
 def verify(dsa_pubkey, signature, zipfile):
     return_status = subprocess.call(['sh',
-                                     '_validate_sparkle_signature.sh',
+                                     '_verify_sparkle_signature.sh',
                                      dsa_pubkey,
                                      signature,
                                      zipfile])
@@ -30,12 +35,10 @@ def verify(dsa_pubkey, signature, zipfile):
 
 
 def fetch_url(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        r.raise_for_status()
     local_file = os.path.basename(url)
+    response = urllib2.urlopen(url)
     with open(local_file, 'wb') as f:
-        f.write(r.content)
+        f.write(response.read())
     return local_file
 
 

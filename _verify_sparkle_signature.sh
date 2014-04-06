@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install into $PATH as validate_sparkle_signature
+# Install into $PATH as verify_sparkle_signature
 
 set -e
 
