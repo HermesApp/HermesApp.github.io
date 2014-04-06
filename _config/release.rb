@@ -16,15 +16,15 @@ html_root = File.expand_path '../..', __FILE__
 
 
 # Updates the hermes_download_url YML key to parameter url.
-hermes_download_url = 'hermes_download_url:'
+hermes_download_url = 'hermes_download:'
 hermes_download_url_regex = /^#{Regexp.quote(hermes_download_url)}.*$/
 version_url = "https://s3.amazonaws.com/alexcrichton-hermes/Hermes-#{version}.zip"
-config_yml = File.join html_root, '_config.yml'
-puts "Updating Hermes download URL in #{File.basename config_yml} to #{version_url}"
+urls_yml = File.join html_root, '_data', '_config.yml'
+puts "Updating Hermes download URL in #{File.basename urls_yml} to #{version_url}"
 
-contents = File.read(config_yml)
+contents = File.read(urls_yml)
 contents = contents.gsub(hermes_download_url_regex, "#{hermes_download_url} #{version_url}")
-File.open(config_yml, 'wb') { |f| f << contents }
+File.open(urls_yml, 'wb') { |f| f << contents }
 
 
 # Take new_xml fragment and inject into versions.xml located in GH Pages root.
