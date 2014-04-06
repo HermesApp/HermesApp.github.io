@@ -1,1 +1,3 @@
+# Speeds up VM setup.
+install: []
 script: python _test.py
