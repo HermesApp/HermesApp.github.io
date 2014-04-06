@@ -26,10 +26,7 @@ def verify(dsa_pubkey, signature, zipfile):
                                      dsa_pubkey,
                                      signature,
                                      zipfile])
-    if return_status == 0:
-        return True
-    else:
-        return False
+    return not bool(return_status)
 
 
 def fetch_url(url):
