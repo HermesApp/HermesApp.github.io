@@ -3,6 +3,8 @@ HermesApp.github.io
 
 GitHub pages live on [hermesapp.org](http://hermesapp.org/).
 
+Latest [appcast](http://hermesapp.org/versions.xml) release status: [![Build Status](https://travis-ci.org/HermesApp/HermesApp.github.io.svg?branch=master)](https://travis-ci.org/HermesApp/HermesApp.github.io)
+
 Making Modifications
 ====================
 
