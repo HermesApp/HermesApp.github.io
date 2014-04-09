@@ -8,48 +8,65 @@ require 'nokogiri'
 
 include Redcarpet
 
-version               = ARGV[0]
-versions_xml_fragment = ARGV[1]
-changelog_md          = ARGV[2]
+$version               = ARGV[0]
+$versions_xml_fragment = ARGV[1]
+$changelog_md          = ARGV[2]
 
-html_root = File.expand_path '../..', __FILE__
+$html_root = File.expand_path '../..', __FILE__
+
+
+def log_information(message)
+    print `tput setaf 2`
+    print '==>>> INFO:  '
+    print `tput sgr0`
+    puts "#{message}"
+end
 
 
 # Updates the hermes_download_url YML key to parameter url.
-hermes_download_url = 'hermes_download:'
-hermes_download_url_regex = /^#{Regexp.quote(hermes_download_url)}.*$/
-version_url = "https://s3.amazonaws.com/alexcrichton-hermes/Hermes-#{version}.zip"
-urls_yml = File.join html_root, '_data', '_config.yml'
-puts "Updating Hermes download URL in #{File.basename urls_yml} to #{version_url}"
+def update_hermes_download_url
+    hermes_download_url = 'hermes_download:'
+    hermes_download_url_regex = /^#{Regexp.quote(hermes_download_url)}.*$/
+    version_url = "https://s3.amazonaws.com/alexcrichton-hermes/Hermes-#{$version}.zip"
+    urls_yml = File.join $html_root, '_data/urls.yml'
+    log_information "Updating Hermes download URL in #{File.basename urls_yml} to #{version_url}"
 
-contents = File.read(urls_yml)
-contents = contents.gsub(hermes_download_url_regex, "#{hermes_download_url} #{version_url}")
-File.open(urls_yml, 'wb') { |f| f << contents }
-
+    contents = File.read(urls_yml)
+    contents = contents.gsub(hermes_download_url_regex, "#{hermes_download_url} #{version_url}")
+    File.open(urls_yml, 'wb') { |f| f << contents }
+end
 
 # Take new_xml fragment and inject into versions.xml located in GH Pages root.
-versions_xml = File.expand_path('../../versions.xml', __FILE__)
-new_xml = File.read(versions_xml_fragment).gsub("\t", '  ')
-puts "Injecting new xml fragment (#{versions_xml_fragment}) into #{versions_xml}"
+def update_versions_xml
+    versions_xml = File.expand_path('../../versions.xml', __FILE__)
+    new_xml = File.read($versions_xml_fragment).gsub("\t", '  ')
+    log_information "Injecting new xml fragment (#{$versions_xml_fragment}) into #{versions_xml}"
 
-contents = Nokogiri::XML File.read(versions_xml)
-has_item = contents.css('item title').any? do |node|
-  if node.content == "Version #{version}"
-    node.parent.replace contents.fragment(new_xml)
-  end
+    contents = Nokogiri::XML File.read(versions_xml)
+    has_item = contents.css('item title').any? do |node|
+      if node.content == "Version #{$version}"
+        node.parent.replace contents.fragment(new_xml)
+      end
+    end
+
+    if !has_item
+      contents.css('language').first.add_next_sibling contents.fragment(new_xml)
+    end
+
+    File.open(versions_xml, 'wb') { |f| f << contents.to_xhtml(:indent => 2) }
 end
-
-if !has_item
-  contents.css('language').first.add_next_sibling contents.fragment(new_xml)
-end
-
-File.open(versions_xml, 'wb') { |f| f << contents.to_xhtml(:indent => 2) }
-
 
 # Render CHANGELOG.md and install into GH Pages root.
-changelog_html = File.join(html_root, '/changelog.html')
-puts "Rendering changelog (#{changelog_md} -> #{changelog_html})"
+def render_changelog_md
+    changelog_html = File.join($html_root, '/changelog.html')
+    log_information "Rendering changelog (#{$changelog_md} -> #{changelog_html})"
 
-File.open(changelog_html, 'wb') { |f|
-  f << Markdown.new(Render::HTML).render(File.read(changelog_md))
-}
+    File.open(changelog_html, 'wb') { |f|
+      f << Markdown.new(Render::HTML).render(File.read($changelog_md))
+    }
+end
+
+
+update_hermes_download_url
+update_versions_xml
+render_changelog_md

@@ -21,7 +21,7 @@ usage() {
     exit
 }
 
-if [ $# != 3 ]; then
+if [ $# -ne 3 ]; then
     usage
 fi
 
