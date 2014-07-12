@@ -1,2 +1,2 @@
 # Dynamically set from _config/release.rb
-hermes_download: https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.1.zip
+hermes_download: https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.2.zip
