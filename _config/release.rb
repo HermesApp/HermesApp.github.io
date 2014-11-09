@@ -11,6 +11,7 @@ include Redcarpet
 $version               = ARGV[0]
 $versions_xml_fragment = ARGV[1]
 $changelog_md          = ARGV[2]
+$bucket                = ARGV[3]
 
 $html_root = File.expand_path '../..', __FILE__
 
@@ -27,7 +28,7 @@ end
 def update_hermes_download_url
     hermes_download_url = 'hermes_download:'
     hermes_download_url_regex = /^#{Regexp.quote(hermes_download_url)}.*$/
-    version_url = "https://s3.amazonaws.com/alexcrichton-hermes/Hermes-#{$version}.zip"
+    version_url = "https://s3.amazonaws.com/#{$bucket}/Hermes-#{$version}.zip"
     urls_yml = File.join $html_root, '_data/urls.yml'
     log_information "Updating Hermes download URL in #{File.basename urls_yml} to #{version_url}"
 
