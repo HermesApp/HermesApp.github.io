@@ -4,6 +4,13 @@
     <link>http://alexcrichton.com/hermes/versions.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language><item>
+<title>Version 1.2.4</title>
+<sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
+<sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
+<pubDate>Fri, 26 Dec 2014 03:25:45 -0600</pubDate>
+<enclosure url="https://s3.amazonaws.com/hermesmacapp/Hermes-1.2.4.zip" sparkle:version="2025" sparkle:shortVersionString="1.2.4" type="application/octet-stream" length="1984918" sparkle:dsaSignature="MCwCFFcgOx4Flf5Egj7M/uMYuBF5ws+VAhQqOuhL65GKZGpU633y1qiZYYTVFA=="></enclosure>
+</item>
+<item>
 <title>Version 1.2.3</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
