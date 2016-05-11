@@ -6,8 +6,6 @@ require 'rubygems'
 require 'redcarpet'
 require 'nokogiri'
 
-include Redcarpet
-
 $version               = ARGV[0]
 $versions_xml_fragment = ARGV[1]
 $changelog_md          = ARGV[2]
@@ -63,7 +61,7 @@ def render_changelog_md
     log_information "Rendering changelog (#{$changelog_md} -> #{changelog_html})"
 
     File.open(changelog_html, 'wb') { |f|
-      f << Markdown.new(Render::HTML).render(File.read($changelog_md))
+      f << Redcarpet::Markdown.new(Redcarpet::Render::HTML).render(File.read($changelog_md))
     }
 end
 
