@@ -8,8 +8,8 @@
         <title>Version 1.2.7</title>
         <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
         <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
-        <pubDate>Wed, 11 May 2016 14:58:06 -0400</pubDate>
-        <enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.7/Hermes-1.2.7.zip" sparkle:version="2040" sparkle:shortVersionString="1.2.7" type="application/octet-stream" length="1776684" sparkle:dsaSignature="MC0CFQCqYmwZAPCQGXY0tWjdQng6G9ufYQIUH/VbQrTWBwhV0cmwsmN9ZrOOovE="></enclosure>
+        <pubDate>Wed, 11 May 2016 15:00:36 -0400</pubDate>
+        <enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.7/Hermes-1.2.7.zip" sparkle:version="2040" sparkle:shortVersionString="1.2.7" type="application/octet-stream" length="1776684" sparkle:dsaSignature="MC0CFQCgnWkkIW9kkyu7JNUqkwUW02qUbwIUEgAQi9ZdJ/sytZTMTQVA7RcM7zo="></enclosure>
     </item>
 <item>
 <title>Version 1.2.6</title>
