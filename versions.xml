@@ -8,49 +8,49 @@
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.9</sparkle:minimumSystemVersion>
 <pubDate>Wed, 06 May 2015 01:54:18 -0500</pubDate>
-<enclosure url="https://s3.amazonaws.com/hermesmacapp/Hermes-1.2.6.zip" sparkle:version="2035" sparkle:shortVersionString="1.2.6" type="application/octet-stream" length="1735212" sparkle:dsaSignature="MC0CFFoVFUk/FRFD6C049taZN0vYz3jsAhUAjrsTDXo4AEfHOcc1T0YdrASkyuk="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.6/Hermes-1.2.6.zip" sparkle:version="2035" sparkle:shortVersionString="1.2.6" type="application/octet-stream" length="1735212" sparkle:dsaSignature="MC0CFFoVFUk/FRFD6C049taZN0vYz3jsAhUAjrsTDXo4AEfHOcc1T0YdrASkyuk="></enclosure>
 </item>
 <item>
 <title>Version 1.2.5</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Sun, 28 Dec 2014 15:37:06 -0600</pubDate>
-<enclosure url="https://s3.amazonaws.com/hermesmacapp/Hermes-1.2.5.zip" sparkle:version="2030" sparkle:shortVersionString="1.2.5" type="application/octet-stream" length="1984971" sparkle:dsaSignature="MCwCFCnDtm6gyA5fueiwo1HNu1L5W43KAhQPB0F2FLgNPdakDLGAl2sHs2JuLg=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.5/Hermes-1.2.5.zip" sparkle:version="2030" sparkle:shortVersionString="1.2.5" type="application/octet-stream" length="1984971" sparkle:dsaSignature="MCwCFCnDtm6gyA5fueiwo1HNu1L5W43KAhQPB0F2FLgNPdakDLGAl2sHs2JuLg=="></enclosure>
 </item>
 <item>
 <title>Version 1.2.4</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Fri, 26 Dec 2014 03:25:45 -0600</pubDate>
-<enclosure url="https://s3.amazonaws.com/hermesmacapp/Hermes-1.2.4.zip" sparkle:version="2025" sparkle:shortVersionString="1.2.4" type="application/octet-stream" length="1984918" sparkle:dsaSignature="MCwCFFcgOx4Flf5Egj7M/uMYuBF5ws+VAhQqOuhL65GKZGpU633y1qiZYYTVFA=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.4/Hermes-1.2.4.zip" sparkle:version="2025" sparkle:shortVersionString="1.2.4" type="application/octet-stream" length="1984918" sparkle:dsaSignature="MCwCFFcgOx4Flf5Egj7M/uMYuBF5ws+VAhQqOuhL65GKZGpU633y1qiZYYTVFA=="></enclosure>
 </item>
 <item>
 <title>Version 1.2.3</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Sun, 09 Nov 2014 15:02:46 -0600</pubDate>
-<enclosure url="https://s3.amazonaws.com/hermesmacapp/Hermes-1.2.3.zip" sparkle:version="2020" sparkle:shortVersionString="1.2.3" type="application/octet-stream" length="1263771" sparkle:dsaSignature="MC0CFQCg/bLgayfRJtJBFW7u74ZFpQxzGQIUIaw1RJzxEou8vclKZ4VxIVjw2oU="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.3/Hermes-1.2.3.zip" sparkle:version="2020" sparkle:shortVersionString="1.2.3" type="application/octet-stream" length="1263771" sparkle:dsaSignature="MC0CFQCg/bLgayfRJtJBFW7u74ZFpQxzGQIUIaw1RJzxEou8vclKZ4VxIVjw2oU="></enclosure>
 </item>
 <item>
 <title>Version 1.2.2</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Sat, 12 Jul 2014 11:41:14 -0500</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.2.zip" sparkle:version="2015" sparkle:shortVersionString="1.2.2" type="application/octet-stream" length="1183216" sparkle:dsaSignature="MCwCFF8mwUu05ax224aksnUZO3VwMqZ5AhQW41yRmnJgcJnJe53HsVcy1uYkSg=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.2/Hermes-1.2.2.zip" sparkle:version="2015" sparkle:shortVersionString="1.2.2" type="application/octet-stream" length="1183216" sparkle:dsaSignature="MCwCFF8mwUu05ax224aksnUZO3VwMqZ5AhQW41yRmnJgcJnJe53HsVcy1uYkSg=="></enclosure>
 </item>
 <item>
 <title>Version 1.2.1</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Thu, 29 May 2014 08:48:42 -0500</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.1.zip" sparkle:version="2010" sparkle:shortVersionString="1.2.1" type="application/octet-stream" length="1180209" sparkle:dsaSignature="MC0CFA33eXUef/6U4OEvQheiYoaCMiucAhUAlnnLQoVYrKKwK/m0JKUkOOnOeHE="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.1/Hermes-1.2.1.zip" sparkle:version="2010" sparkle:shortVersionString="1.2.1" type="application/octet-stream" length="1180209" sparkle:dsaSignature="MC0CFA33eXUef/6U4OEvQheiYoaCMiucAhUAlnnLQoVYrKKwK/m0JKUkOOnOeHE="></enclosure>
 </item>
 <item>
 <title>Version 1.2.0</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Sat, 05 Apr 2014 20:52:37 -0500</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.2.0.zip" sparkle:version="2000" sparkle:shortVersionString="1.2.0" type="application/octet-stream" length="1168628" sparkle:dsaSignature="MC0CFQCNgfMERXJnW4rPXzZ7WBXEihOKWAIUOVJNfMBBBtaXXsBWnn7kCN1zptc="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.0/Hermes-1.2.0.zip" sparkle:version="2000" sparkle:shortVersionString="1.2.0" type="application/octet-stream" length="1168628" sparkle:dsaSignature="MC0CFQCNgfMERXJnW4rPXzZ7WBXEihOKWAIUOVJNfMBBBtaXXsBWnn7kCN1zptc="></enclosure>
 </item>
 
 <item>
@@ -58,6 +58,7 @@
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Mon, 16 Sep 2013 23:42:36 -0700</pubDate>
+<!-- unfortunately, this URL is invalid -->
 <enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.20.zip" sparkle:version="1956" sparkle:shortVersionString="1.1.20" type="application/octet-stream" length="1162537" sparkle:dsaSignature="MC4CFQCUC3QX4k6OZEE9rL6vWZjxwajsZQIVAKMG7yaJtqsDJMgmsS5Ve7ecGHX/"></enclosure>
 </item>
 <item>
@@ -65,14 +66,14 @@
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Wed, 04 Sep 2013 23:07:57 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.19.zip" sparkle:version="1955" sparkle:shortVersionString="1.1.19" type="application/octet-stream" length="1160919" sparkle:dsaSignature="MC0CFAKRaWvaK7qxT5aM0SHBCIzlAnCIAhUAgoivbiAGevEh+g34Qq0VR5k6uqc="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.19/Hermes-1.1.19.zip" sparkle:version="1955" sparkle:shortVersionString="1.1.19" type="application/octet-stream" length="1160919" sparkle:dsaSignature="MC0CFAKRaWvaK7qxT5aM0SHBCIzlAnCIAhUAgoivbiAGevEh+g34Qq0VR5k6uqc="></enclosure>
 </item>
 <item>
 <title>Version 1.1.18</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Wed, 04 Sep 2013 23:00:23 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.18.zip" sparkle:version="1954" sparkle:shortVersionString="1.1.18" type="application/octet-stream" length="1160984" sparkle:dsaSignature="MCwCFCYpmxMiZ4hPyvdpp7mBOdR/MKW0AhRbVfz2/oWJEqEBvupdIWbtAiTbHg=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.18/Hermes-1.1.18.zip" sparkle:version="1954" sparkle:shortVersionString="1.1.18" type="application/octet-stream" length="1160984" sparkle:dsaSignature="MCwCFCYpmxMiZ4hPyvdpp7mBOdR/MKW0AhRbVfz2/oWJEqEBvupdIWbtAiTbHg=="></enclosure>
 </item>
 
 <item>
@@ -80,28 +81,28 @@
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 <pubDate>Tue, 30 Jul 2013 11:01:08 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.17.zip" sparkle:version="1953" sparkle:shortVersionString="1.1.17" type="application/octet-stream" length="1156218" sparkle:dsaSignature="MCwCFCyrFzPShT2EP5XWcphEXkIpcjdDAhRXj7glG3MIscX1Pl6vjJWnjKdKPg=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.17/Hermes-1.1.17.zip" sparkle:version="1953" sparkle:shortVersionString="1.1.17" type="application/octet-stream" length="1156218" sparkle:dsaSignature="MCwCFCyrFzPShT2EP5XWcphEXkIpcjdDAhRXj7glG3MIscX1Pl6vjJWnjKdKPg=="></enclosure>
 </item>
 <item>
 <title>Version 1.1.16</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 <pubDate>Tue, 30 Jul 2013 00:33:28 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.16.zip" sparkle:version="1952" sparkle:shortVersionString="1.1.16" type="application/octet-stream" length="1156093" sparkle:dsaSignature="MC0CFDW0dQJD2h5o80/KJ+rqP7ny86cJAhUAqmHm0GiTbaljhQp5yobZtFzN6DQ="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.16/Hermes-1.1.16.zip" sparkle:version="1952" sparkle:shortVersionString="1.1.16" type="application/octet-stream" length="1156093" sparkle:dsaSignature="MC0CFDW0dQJD2h5o80/KJ+rqP7ny86cJAhUAqmHm0GiTbaljhQp5yobZtFzN6DQ="></enclosure>
 </item>
 <item>
 <title>Version 1.1.15</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 <pubDate>Thu, 27 Jun 2013 08:29:55 -0700</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.15.zip" sparkle:version="1951" sparkle:shortVersionString="1.1.15" type="application/octet-stream" length="1155598" sparkle:dsaSignature="MC0CFQCnVmRjYzW61h6252n0/Wsap98+pwIUTv9sV+wLc3p9Dy3iiRlkhuKFzjE="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.15/Hermes-1.1.15.zip" sparkle:version="1951" sparkle:shortVersionString="1.1.15" type="application/octet-stream" length="1155598" sparkle:dsaSignature="MC0CFQCnVmRjYzW61h6252n0/Wsap98+pwIUTv9sV+wLc3p9Dy3iiRlkhuKFzjE="></enclosure>
 </item>
 <item>
 <title>Version 1.1.14</title>
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
 <pubDate>Sun, 14 Apr 2013 01:23:27 -0400</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.14.zip" sparkle:version="1950" sparkle:shortVersionString="1.1.14" type="application/octet-stream" length="1154798" sparkle:dsaSignature="MCwCFAeQyXN2guNhfhz/u0TSOBbZ62afAhRtCkQv6E1XSkhyY0UkTJY5Pp1sZg=="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.14/Hermes-1.1.14.zip" sparkle:version="1950" sparkle:shortVersionString="1.1.14" type="application/octet-stream" length="1154798" sparkle:dsaSignature="MCwCFAeQyXN2guNhfhz/u0TSOBbZ62afAhRtCkQv6E1XSkhyY0UkTJY5Pp1sZg=="></enclosure>
 </item>
 
 <item>
@@ -109,7 +110,7 @@
 <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.6</sparkle:minimumSystemVersion>
 <pubDate>Fri, 04 Jan 2013 15:27:29 -0600</pubDate>
-<enclosure url="https://s3.amazonaws.com/alexcrichton-hermes/Hermes-1.1.13.zip" sparkle:version="1940" sparkle:shortVersionString="1.1.13" type="application/octet-stream" length="1001332" sparkle:dsaSignature="MC0CFQCMOO78slNtS4MJowMr4ONW+q7UAwIUb53CDucPL/5KbSuJY33ygC1v5B4="></enclosure>
+<enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.1.13/Hermes-1.1.13.zip" sparkle:version="1940" sparkle:shortVersionString="1.1.13" type="application/octet-stream" length="1001332" sparkle:dsaSignature="MC0CFQCMOO78slNtS4MJowMr4ONW+q7UAwIUb53CDucPL/5KbSuJY33ygC1v5B4="></enclosure>
 </item>
 <item>
 <title>Version 1.1.12</title>
