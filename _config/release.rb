@@ -1,15 +1,16 @@
 #!/usr/bin/env ruby
-# Usage: ruby release.rb version path/to/versions.xml path/to/CHANGELOG.md
-# Example: ruby release.rb 1.2.0 ./build/Release/versions.xml ./CHANGELOG.md
+# Usage: ruby release.rb version path/to/versions.xml path/to/CHANGELOG.md 10.10
+# Example: ruby release.rb 1.2.0 ./build/Release/versions.xml ./CHANGELOG.md 10.10
 
 require 'rubygems'
 require 'redcarpet'
 require 'nokogiri'
+require 'yaml'
 
 $version               = ARGV[0]
 $versions_xml_fragment = ARGV[1]
 $changelog_md          = ARGV[2]
-$bucket                = ARGV[3]
+$deployment_target     = ARGV[3]
 
 $html_root = File.expand_path '../..', __FILE__
 
@@ -21,18 +22,15 @@ def log_information(message)
     puts "#{message}"
 end
 
+# Updates the release YAML.
+def update_release_yaml
+    release_yaml = File.join $html_root, '_data/release.yml'
+    release_data = YAML.load_file(release_yaml)
+    release_data['hermes_download'] = "https://github.com/HermesApp/Hermes/releases/download/v#{$version}/Hermes-#{$version}.zip"
+    release_data['deployment_target'] = $deployment_target
 
-# Updates the hermes_download_url YML key to parameter url.
-def update_hermes_download_url
-    hermes_download_url = 'hermes_download:'
-    hermes_download_url_regex = /^#{Regexp.quote(hermes_download_url)}.*$/
-    version_url = "https://s3.amazonaws.com/#{$bucket}/Hermes-#{$version}.zip"
-    urls_yml = File.join $html_root, '_data/urls.yml'
-    log_information "Updating Hermes download URL in #{File.basename urls_yml} to #{version_url}"
-
-    contents = File.read(urls_yml)
-    contents = contents.gsub(hermes_download_url_regex, "#{hermes_download_url} #{version_url}")
-    File.open(urls_yml, 'wb') { |f| f << contents }
+    log_information "Updating Hermes release information in #{File.basename release_yaml} to #{$version}"
+    YAML.dump(release_data, File.open(release_yaml, 'wb'))
 end
 
 # Take new_xml fragment and inject into versions.xml located in GH Pages root.
@@ -66,6 +64,6 @@ def render_changelog_md
 end
 
 
-update_hermes_download_url
+update_release_yaml
 update_versions_xml
 render_changelog_md
