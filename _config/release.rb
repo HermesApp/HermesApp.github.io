@@ -17,9 +17,9 @@ $html_root = File.expand_path '../..', __FILE__
 
 
 def log_information(message)
-    print `tput setaf 2`
-    print '==>>> INFO:  '
-    print `tput sgr0`
+    print `tput setaf 2` if ENV['TERM']
+    print '==>>> INFO: '
+    print `tput sgr0` if ENV['TERM']
     puts "#{message}"
 end
 
