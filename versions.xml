@@ -4,6 +4,15 @@
     <link>https://raw.githubusercontent.com/HermesApp/HermesApp.github.io/master/versions.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
+
+    <item>
+        <title>Version 1.2.8</title>
+        <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
+        <sparkle:minimumSystemVersion>10.10</sparkle:minimumSystemVersion>
+        <pubDate>Fri, 24 Jun 2016 08:13:23 -0400</pubDate>
+        <enclosure url="https://github.com/HermesApp/Hermes/releases/download/v1.2.8/Hermes-1.2.8.zip" sparkle:version="2051" sparkle:shortVersionString="1.2.8" type="application/octet-stream" length="1817381" sparkle:dsaSignature="MC4CFQCnXcUgFGAT1l0hTT4q16Sj5LZfkwIVALG+bbrCZPwtpPPbiCkuFLJeb9A0"></enclosure>
+    </item>
+
     <item>
         <title>Version 1.2.7</title>
         <sparkle:releaseNotesLink>http://hermesapp.org/changelog.html</sparkle:releaseNotesLink>
