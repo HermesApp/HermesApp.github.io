@@ -64,9 +64,9 @@ body {
   h1 {
     @include fonts;
     color: white;
-    font-weight: 900;
-    font-size: 95px;
-    margin: 0;
+    font-weight: normal;
+    font-size: 72px;
+    margin: 10px 0px 10px -5px;
     padding: 0;
     line-height: 100%;
   }
@@ -75,9 +75,9 @@ body {
     @include fonts;
     color: #c1c271;
     margin: 0;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
-    width: 150px;
+    width: 190px;
     float: left;
   }
 
@@ -91,18 +91,19 @@ body {
 
     display: block;
 
-    padding-left: 55px;
-    font-size: 25px;
-    margin-bottom: 10px;
+    padding-left: 60px;
+    font-size: 20px;
+    margin-bottom: 15px;
     color: white;
     border: 1px solid lighten(black, 20%);
     float: left;
+    width: 127px;
 
     box-shadow: none;
 
     .sub {
       @include quiet;
-      font-size: 10px;
+      font-size: 12px;
     }
 
     &:visited {
@@ -110,7 +111,7 @@ body {
     }
 
     &:hover {
-      @include box-shadow(#888 3px 3px 3px);
+      @include box-shadow(#888 2px 2px 2px);
       border: 1px solid gray;
     }
 
@@ -125,17 +126,14 @@ body {
 
   .download {
     background: image-url('download.png') no-repeat;
-    width: 125px;
   }
 
   .develop {
     background: image-url('xcode.png') no-repeat;
-    width: 100px;
   }
 
   .info {
     background: image-url('information.png') no-repeat;
-    width: 100px;
   }
 }
 
@@ -162,8 +160,8 @@ body {
     float: left;
     font-size: 20px;
     font-weight: 500;
-    padding: 5px 20px 5px 10px;
-
+    padding: 5px 10px 5px 10px;
+    margin-right: 20px;
     @include background-image(
         linear-gradient(top left, lighten(black, 90%), white));
   }
